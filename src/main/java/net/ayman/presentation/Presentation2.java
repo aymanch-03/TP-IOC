@@ -19,10 +19,10 @@ public class Presentation2 {
 
         String metierClassName = scanner.nextLine();
         Class cMetier = Class.forName(metierClassName);
-//        IMetier metier=(IMetier) cMetier.getConstructor(IDao.class).newInstance(dao);
-        IMetier metier=(IMetier) cMetier.getConstructor().newInstance();
-        Method setDao = cMetier.getMethod("setDao", IDao.class);
-        setDao.invoke(metier, dao);
+        IMetier metier=(IMetier) cMetier.getConstructor(IDao.class).newInstance(dao);
+//        IMetier metier=(IMetier) cMetier.getConstructor().newInstance();
+//        Method setDao = cMetier.getMethod("setDao", IDao.class);
+//        setDao.invoke(metier, dao);
 
         System.out.println("RES="+metier.calcul());
     }
