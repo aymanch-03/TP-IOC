@@ -6,6 +6,7 @@ import net.ayman.metier.IMetier;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.Scanner;
 
 public class Presentation2 {
@@ -18,7 +19,10 @@ public class Presentation2 {
 
         String metierClassName = scanner.nextLine();
         Class cMetier = Class.forName(metierClassName);
-        IMetier metier=(IMetier) cMetier.getConstructor(IDao.class).newInstance(dao);
+//        IMetier metier=(IMetier) cMetier.getConstructor(IDao.class).newInstance(dao);
+        IMetier metier=(IMetier) cMetier.getConstructor().newInstance();
+        Method setDao = cMetier.getMethod("setDao", IDao.class);
+        setDao.invoke(metier, dao);
 
         System.out.println("RES="+metier.calcul());
     }
