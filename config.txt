@@ -1,0 +1,2 @@
+net.ayman.dao.DaoImpl
+net.ayman.metier.MetierImpl

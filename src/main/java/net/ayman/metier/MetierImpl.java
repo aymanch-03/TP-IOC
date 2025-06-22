@@ -1,6 +1,6 @@
 package net.ayman.metier;
 
-import net.ayman.doa.IDao;
+import net.ayman.dao.IDao;
 
 public class MetierImpl implements IMetier {
     private IDao dao;

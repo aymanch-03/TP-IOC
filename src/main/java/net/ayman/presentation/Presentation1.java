@@ -1,6 +1,6 @@
 package net.ayman.presentation;
 
-import net.ayman.doa.DaoImpl;
+import net.ayman.dao.DaoImpl;
 import net.ayman.metier.MetierImpl;
 
 public class Presentation1 {

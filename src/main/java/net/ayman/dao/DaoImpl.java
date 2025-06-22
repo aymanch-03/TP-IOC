@@ -1,4 +1,4 @@
-package net.ayman.doa;
+package net.ayman.dao;
 
 public class DaoImpl implements IDao {
     @Override

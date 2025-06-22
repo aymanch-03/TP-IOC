@@ -1,6 +1,6 @@
 package net.ayman.ext;
 
-import net.ayman.doa.IDao;
+import net.ayman.dao.IDao;
 
 public class DaoImplV2 implements IDao {
     @Override
