@@ -1,2 +1,2 @@
-net.ayman.dao.DaoImpl
+net.ayman.ext.DaoImplV2
 net.ayman.metier.MetierImpl
