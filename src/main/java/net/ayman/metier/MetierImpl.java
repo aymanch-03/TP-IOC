@@ -2,20 +2,20 @@ package net.ayman.metier;
 
 import net.ayman.doa.IDao;
 
-public class IMetierImpl implements IMetier {
+public class MetierImpl implements IMetier {
     private IDao dao;
 
-    public IMetierImpl(IDao dao) {
+    public MetierImpl(IDao dao) {
         this.dao = dao;
     }
 
-    public IMetierImpl() {
+    public MetierImpl() {
     }
 
     @Override
     public double calcul() {
         double t = dao.getData();
-        double result = t * 12 * Math.PI/2 * Math.cos(t);
+        double result = t * 43 /3;
         return result;
     }
 
